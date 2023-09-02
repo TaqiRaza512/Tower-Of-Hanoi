@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="./Style.css">
+   <script src="https://kit.fontawesome.com/9c03a82cf0.js" ></script>
+   <title>Tower</title>
+</head>
+    <body onload="LevelUpdate()">
+        <div class="container">
+            <div class="Menu">
+                <h1>Tower Of Hanoi</h1>
+                <div class="bar">
+                    <div onclick="Undo()"class="Horizontal">
+                        <i class="fa-solid fa-rotate-left"
+                            style="height: 60px;line-height: 60px;vertical-align: middle;"></i>
+                    </div>
+                    <div class="vertical" onclick="LevelDown()">
+                        <i class="fa-sharp fa-solid fa-arrow-down"
+                            style="height: 60px;line-height: 60px;vertical-align: middle;"></i>
+                    </div>
+                    <div class="level">
+                        <h2 id="LevelShow">0</h2>
+                    </div>
+                    <div class="vertical" onclick="LevelUp()">
+                            <i class="fa-sharp fa-solid fa-arrow-up"
+                                 style="height: 60px;line-height: 60px;vertical-align: middle;"></i>
+                    </div>
+                    <div  onclick="RedoMove()" class="Horizontal">
+                        <i class="fa-solid fa-rotate-right"
+                            style="height: 60px;line-height: 60px;vertical-align: middle;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Rods">
+                <div id="Rod1" class="rod">
+                    <div class="Stick"></div>
+                    <div class="disk1" draggable="true">
+                        <p class="DiskValue">1</p>
+                    </div>
+                </div>
+                <div id="Rod2" class="rod">
+                    <div class="Stick"></div>
+                </div>
+                <div id="Rod3" class="rod">
+                    <div class="Stick"></div>
+                </div>
+
+            </div>
+            <div class="Options" >
+                <div class="PlayAgain" onclick="PlayAgain()" >
+                    <p onclick="ResetTimer()">Play Again</p>
+                </div>
+                 <div class="PlayAgain" >
+                    <!-- here playagain is used to inherit the style properties -->
+                      <span id="timer">
+                        <span id="time">60</span>
+                        </span>
+                </div>
+                 <div class="PlayAgain">
+                    <!-- here playagain is used to inherit the style properties -->
+                    <p style="display:inline;">Count :</p>
+                         <p id="Steps">0</p>
+                         
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>
+<script src="./Java.js"></script>
+<script src="./timer.js"></script>

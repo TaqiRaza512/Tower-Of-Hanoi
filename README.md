@@ -13,7 +13,7 @@ The Tower of Hanoi is a puzzle that involves moving a stack of disks from one ro
 - CSS: For styling and responsive design.
 
 ## How to Play
-- Access the game at [Tower of Hanoi Game](tower-of-hanoi-chi.vercel.app).
+- Access the game at [tower-of-hanoi-chi.vercel.app](https://tower-of-hanoi-chi.vercel.app)
 - Follow the rules: Only one disk can be moved at a time, and a larger disk cannot be placed on top of a smaller disk.
 
 ## Setup and Installation
